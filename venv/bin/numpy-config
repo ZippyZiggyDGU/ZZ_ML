@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/hoyeon/동국대 25-1/종합설계1/종설 예측 모델 모음/dgu_hoyeon_model/venv/bin/python" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from numpy._configtool import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
